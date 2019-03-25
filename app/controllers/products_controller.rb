@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-    before_action :set_product, only: %i[new show]
+    before_action :set_product, only: [:new, :show]
     def index
         @products = Product.all
     end
